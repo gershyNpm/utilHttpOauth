@@ -1,9 +1,13 @@
 import '@gershy/clearing';
 import type http                           from '@gershy/util-http';
-import type { HttpArgs, HttpReq, HttpRes } from '@gershy/util-http';
 import type retry from '@gershy/util-retry';
 
 type OptionalProps<T, K extends keyof T> = Omit<T, K> & Partial<Pick<T, K>>;
+
+// TODO: These are completely stubbed... need to fix
+type HttpArgs<A, B> = any;
+type HttpReq = { query: any, body: any };
+type HttpRes = any;
 
 export type HttpOauthArgs<Req extends HttpReq, Res extends HttpRes> = {
   
@@ -49,7 +53,7 @@ export default class HttpOauth<Req extends HttpReq, Res extends HttpRes> {
     if (Date.now() < bearerToken.expiryMs) return bearerToken.token;
     
     const httpArgs = this.args.tokenHttpArgs;
-    this.bearerToken = this.inject.http(httpArgs, httpArgs).then(res => {
+    this.bearerToken = this.inject.http(httpArgs).then(res => {
       
       const { expiryMs, token } = this.args.tokenExtract(res as any);
       const now = Date.now();
@@ -78,7 +82,7 @@ export default class HttpOauth<Req extends HttpReq, Res extends HttpRes> {
           ...args
         } as any);
         
-        const res = await this.inject.http(httpAuthArgs, httpAuthArgs).catch(err => {
+        const res = await this.inject.http(httpAuthArgs).catch(err => {
           if (/^http (?:reject|glitch)$/.test(err.message)) return err;
           throw err;
         });
