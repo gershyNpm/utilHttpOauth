@@ -1,6 +1,6 @@
 {
   "name": "@gershy/util-http-oauth",
-  "version": "0.0.19",
+  "version": "0.0.20",
   "author": "Gershom Maes",
   "description": "TODO",
   "keywords": [
@@ -8,23 +8,23 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gershy/utilHttpOauth.git"
+    "url": "git+https://github.com/gershyNpm/utilHttpOauth.git"
   },
   "bugs": {
-    "url": "https://github.com/gershy/utilHttpOauth/issues"
+    "url": "https://github.com/gershyNpm/utilHttpOauth/issues"
   },
-  "homepage": "https://github.com/gershy/utilHttpOauth#readme",
+  "homepage": "https://github.com/gershyNpm/utilHttpOauth#readme",
   "type": "module",
   "files": [
     "cmp"
   ],
   "license": "ISC",
   "peerDependencies": {
-    "@gershy/clearing": "^0.0.51"
+    "@gershy/clearing": "^0.0.52"
   },
   "devDependencies": {
-    "@gershy/util-http": "^0.0.19",
-    "@gershy/util-retry": "^0.0.22",
+    "@gershy/util-http": "^0.0.20",
+    "@gershy/util-retry": "^0.0.23",
     "@types/node": "^24.10.1"
   },
   "exports": {
