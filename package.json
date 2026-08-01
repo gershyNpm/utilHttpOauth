@@ -1,6 +1,6 @@
 {
   "name": "@gershy/util-http-oauth",
-  "version": "0.0.21",
+  "version": "0.0.22",
   "author": "Gershom Maes",
   "description": "TODO",
   "keywords": [
@@ -20,11 +20,11 @@
   ],
   "license": "ISC",
   "peerDependencies": {
-    "@gershy/clearing": "^0.0.53"
+    "@gershy/clearing": "^0.0.54"
   },
   "devDependencies": {
-    "@gershy/util-http": "^0.0.21",
-    "@gershy/util-retry": "^0.0.24",
+    "@gershy/util-http": "^0.0.22",
+    "@gershy/util-retry": "^0.0.25",
     "@types/node": "^24.10.1"
   },
   "exports": {
