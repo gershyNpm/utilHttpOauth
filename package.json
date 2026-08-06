@@ -1,6 +1,6 @@
 {
   "name": "@gershy/util-http-oauth",
-  "version": "0.0.22",
+  "version": "0.0.23",
   "author": "Gershom Maes",
   "description": "TODO",
   "keywords": [
@@ -23,8 +23,8 @@
     "@gershy/clearing": "^0.0.54"
   },
   "devDependencies": {
-    "@gershy/util-http": "^0.0.22",
-    "@gershy/util-retry": "^0.0.25",
+    "@gershy/util-http": "^0.0.23",
+    "@gershy/util-retry": "^0.0.26",
     "@types/node": "^24.10.1"
   },
   "exports": {
